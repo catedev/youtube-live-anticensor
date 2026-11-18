@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Live Anticensor",
+  "version": "0.1.0",
+  "description": "Keeps deleted YouTube live chat messages visible and marks the ones removed by moderators.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/live_chat*", "https://www.youtube.com/live_chat_replay*"],
+      "js": ["inject.js"],
+      "css": ["style.css"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    }
+  ]
+}

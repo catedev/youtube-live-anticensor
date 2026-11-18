@@ -1,0 +1,20 @@
+[data-ylac="mod"],
+[data-ylac="ban"] {
+  background: rgba(229, 57, 53, 0.14) !important;
+  box-shadow: inset 3px 0 0 #e53935;
+}
+
+[data-ylac="self"] {
+  opacity: 0.6;
+}
+
+#ylac-stats {
+  display: block;
+  font-size: 12px;
+  white-space: nowrap;
+  color: var(--yt-live-chat-secondary-text-color, #aaa);
+}
+
+#ylac-stats.ylac-active {
+  color: #e53935;
+}
